@@ -1,0 +1,19 @@
+# Host 192.168.XXX.XXX
+#  HostName 192.168.XXX.XXX
+#  ForwardX11 yes # yes: utilize local monitor
+#  ForwardAgent yes # yes: forward credentials (git etc)
+#  User debian
+
+# Default GitHub
+Host personal-github.com
+HostName github.com
+User git
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/personal # The personal account ssh key
+
+# Work GitHub
+Host github.com
+HostName github.com
+User git
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/kevin_biosort # The work account ssh key
